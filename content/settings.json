@@ -1,0 +1,10 @@
+{
+  "title": "Cyn",
+  "url": "https://cyn.armaldio.xyz",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "electronforconstruct/website",
+  "twitter": "@armaldio"
+}

@@ -1,29 +1,6 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        documentation
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <nuxt-content :document="page" />
   </div>
 </template>
 
@@ -31,9 +8,11 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  head () {
+  async asyncData ({ $content }) {
+    const page = await $content('test').fetch()
+
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
+      page
     }
   }
 })

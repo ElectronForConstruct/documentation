@@ -1,5 +1,6 @@
+import theme from '@nuxt/content-theme-docs'
 
-export default {
+export default theme({
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -24,6 +25,20 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+  i18n: {
+    locales: () => [{
+      code: 'fr',
+      iso: 'fr-FR',
+      file: 'fr-FR.js',
+      name: 'Français'
+    }, {
+      code: 'en',
+      iso: 'en-US',
+      file: 'en-US.js',
+      name: 'English'
+    }],
+    defaultLocale: 'en'
   },
   /*
   ** Global CSS
@@ -54,7 +69,7 @@ export default {
   */
   modules: [
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    // '@nuxt/content'
   ],
   /*
   ** Content module configuration
@@ -67,4 +82,4 @@ export default {
   */
   build: {
   }
-}
+})
