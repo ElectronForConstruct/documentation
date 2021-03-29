@@ -1,6 +1,6 @@
 # Documentation
 
-## translation contribution
+## Translation contribution
 
 Make an account at: https://www.transifex.com/cyn/public/
 
