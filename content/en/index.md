@@ -1,12 +1,8 @@
 ---
 title: Introduction
 description: ''
-category: Getting Started
 position: 1
+fullscreen: true
 ---
 
-## Introduction
-
-## Getting started
-
-## Using the module
+This is the introductionn
