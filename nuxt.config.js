@@ -16,9 +16,4 @@ export default withDocus({
     }],
     defaultLocale: 'en'
   },
-  docus: {
-    colors: {
-      primaryColor: '#E24F55'
-    }
-  }
 })
