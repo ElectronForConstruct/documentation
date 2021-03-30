@@ -5,4 +5,4 @@ category: Plugins
 position: 2
 ---
 
-Hello
+Just add the package name to the plugin entry of your configuration file
