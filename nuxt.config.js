@@ -10,8 +10,8 @@ export default withDocus({
       name: 'Français'
     }, {
       code: 'en',
-      iso: 'en-US',
       file: 'en-US.js',
+      iso: 'en-US',
       name: 'English'
     }],
     defaultLocale: 'en'
